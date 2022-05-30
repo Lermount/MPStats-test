@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'SF Compact Display';
+  src: url("../fonts/sf-compact-display-medium-5864711817c30-webfont.woff") format("woff"), url("../fonts/sf-compact-display-medium-5864711817c30-webfont.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Compact Display';
+  src: url("../fonts/sf-compact-display-thin-58646eb43a785-webfont.woff") format("woff"), url("../fonts/sf-compact-display-thin-58646eb43a785-webfont.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: 850px) {
+  .container {
+    width: 850px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-size: cover;
+  }
+  .content_left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    position: relative;
+    text-align: center;
+  }
+  .content_left_title {
+    margin-bottom: 13.52px;
+    font-size: 33px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+  .content_left_title::after {
+    content: url("../images/heart850.svg");
+    left: 250px;
+    top: -15px;
+  }
+  .content_left_description {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+  .content_left .article {
+    margin-left: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .content_left .article #article {
+    width: 24px;
+    height: 16.46px;
+  }
+  .content_left .article_description_text {
+    margin-left: 20.41px;
+    margin-bottom: 15.52px;
+    max-width: 484.28px;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+  .content_left .article_description_autor {
+    margin-left: 20.41px;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: left;
+  }
+  .content_left_btn {
+    margin: 0 auto;
+    padding: 14px 41px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .content_left .jobs {
+    display: none;
+  }
+  .content_left .jobs850 {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .content_right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .content_right .table {
+    margin-top: 53.34px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    gap: 10px 6.93px;
+  }
+  .content_right .table_list {
+    padding-left: 22.16px;
+  }
+  .content_right .table_list_icon {
+    margin-top: 12.66px;
+    margin-right: 25px;
+    max-width: 43.65px;
+    max-height: 39.2px;
+  }
+  .content_right .table_list_description {
+    margin-bottom: 4.16px;
+    font-size: 14px;
+    line-height: 110%;
+  }
+  .content_right .table_list_description_span {
+    max-width: 149.68px;
+    font-size: 10px;
+    line-height: 170%;
+    color: #CCD4D9;
+  }
+  .content_right .table_list:nth-child(1), .content_right .table_list:nth-child(2), .content_right .table_list:nth-child(3), .content_right .table_list:nth-child(4) {
+    background-color: #303948;
+  }
+  .content_right .table_list:nth-child(5), .content_right .table_list:nth-child(6), .content_right .table_list:nth-child(7), .content_right .table_list:nth-child(8) {
+    border-color: #435159;
+    background: none;
+  }
+}
+/*# sourceMappingURL=850.css.map */

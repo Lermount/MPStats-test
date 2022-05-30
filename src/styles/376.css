@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'SF Compact Display';
+  src: url("../fonts/sf-compact-display-medium-5864711817c30-webfont.woff") format("woff"), url("../fonts/sf-compact-display-medium-5864711817c30-webfont.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Compact Display';
+  src: url("../fonts/sf-compact-display-thin-58646eb43a785-webfont.woff") format("woff"), url("../fonts/sf-compact-display-thin-58646eb43a785-webfont.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: 376px) {
+  .container {
+    width: 376px !important;
+    padding-left: 29px !important;
+    padding-right: 29px !important;
+  }
+  .content_left_title {
+    margin-top: 28.37;
+    margin-bottom: 16.52px;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+  }
+  .content_left_description {
+    margin-bottom: 49px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+  }
+  .content_left .article_description_text {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+  }
+  .content_left .article_description_text_autor {
+    font-size: 13px;
+    line-height: 130%;
+  }
+  .content_left_btn {
+    min-width: 100%;
+  }
+  .content_left .jobs850 {
+    display: none !important;
+  }
+  .content_right .table {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    -ms-grid-rows: (1fr)[4] !important;
+        grid-template-rows: repeat(4, 1fr) !important;
+    gap: 10px !important;
+  }
+  .content_right .table_list_icon {
+    margin-top: 11.44px !important;
+    margin-right: 22px !important;
+    max-width: 39.28px !important;
+    max-height: 35.27px !important;
+  }
+  .content_right_list:nth-child(1), .content_right_list:nth-child(2), .content_right_list:nth-child(5), .content_right_list:nth-child(6) {
+    background: #303948 !important;
+  }
+  .content_right_list:nth-child(3), .content_right_list:nth-child(4), .content_right_list:nth-child(7), .content_right_list:nth-child(8) {
+    border-color: #435159 !important;
+    background: none !important;
+  }
+}
+/*# sourceMappingURL=376.css.map */

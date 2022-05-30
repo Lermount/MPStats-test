@@ -1,0 +1,39 @@
+@import 'var.scss';
+@import 'mixin.scss';
+@font-face {
+  font-family: 'SF Compact Display';
+  src: url('../fonts/sf-compact-display-medium-5864711817c30-webfont.woff') format('woff'),
+       url('../fonts/sf-compact-display-medium-5864711817c30-webfont.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Compact Display';
+  src: url('../fonts/sf-compact-display-thin-58646eb43a785-webfont.woff') format('woff'),
+       url('../fonts/sf-compact-display-thin-58646eb43a785-webfont.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

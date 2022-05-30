@@ -1,0 +1,88 @@
+@import 'common.scss';
+@import 'var.scss';
+@import 'mixin.scss';
+
+@media(max-width: 376px) {
+  .container {
+    width: 376px !important;
+    padding-left: 29px !important;
+    padding-right: 29px !important;
+  }
+
+  .content_left {
+    &_title {
+      margin-top: 28.37;
+      margin-bottom: 16.52px;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: -0.01em;
+    }
+
+    &_description {
+      margin-bottom: 49px;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .article {
+
+      &_description {
+        &_text {
+          font-size: 18px;
+          line-height: 20px;
+          letter-spacing: -0.02em;
+
+          &_autor {
+            font-size: 13px;
+            line-height: 130%;
+          }
+        }
+      }
+    }
+
+    &_btn {
+      min-width: 100%;
+    }
+
+    .jobs850 {
+      display: none !important;
+    }
+  }
+
+  .content_right {
+
+    .table {
+      grid-template-columns: repeat(2, 1fr) !important;
+      grid-template-rows: repeat(4, 1fr) !important;
+      gap: 10px !important;
+
+      &_list {
+
+        &_icon {
+          margin-top: 11.44px !important;
+          margin-right: 22px !important;
+          max-width: 39.28px !important;
+          max-height: 35.27px !important;
+        }
+      }
+    }
+
+    &_list:nth-child(1),
+    &_list:nth-child(2),
+    &_list:nth-child(5),
+    &_list:nth-child(6) {
+      background: #303948 !important;
+    }
+
+    &_list:nth-child(3),
+    &_list:nth-child(4),
+    &_list:nth-child(7),
+    &_list:nth-child(8) {
+      border-color: #435159 !important;
+      background: none !important;
+    }
+
+  }
+}
+

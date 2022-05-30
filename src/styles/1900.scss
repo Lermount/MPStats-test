@@ -1,0 +1,181 @@
+@import 'common.scss';
+@import 'var.scss';
+@import 'mixin.scss';
+
+.container {
+  width: 1900px;
+  padding-left: 201px;
+  padding-right: 201px;
+  margin: 0 auto;
+  background: url('../images/back.webp');
+  background-color: $backgroundColor;
+  background-repeat: no-repeat;
+  background-position: left, bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+
+.content_left {
+  flex: 1 1 60%;
+
+  &_title {
+    position: relative;
+    margin-top: 72.38px;
+    margin-bottom: 31.52px;
+    font-family: 'SF Compact Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 55px;
+    letter-spacing: -0.01em;
+    color: $text;
+  }
+
+  &_title::after {
+    content: url('../images/heart.svg');
+    position: absolute;
+    top: -22px;
+    left: 406px;
+  }
+
+  &_description {
+    margin-bottom: 66.99px;
+    max-width: 553px;
+    font-family: 'SF Compact Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: $subText;
+  }
+
+  .article {
+    display: flex;
+    margin-left: 50px;
+
+    &_description {
+
+      &_text {
+        margin-top: 0;
+        margin-left: 37.2px;
+        max-width: 516px;
+        margin-bottom: 27px;
+        font-family: 'SF Compact Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 33px;
+        letter-spacing: -0.02em;
+        color: $text;
+      }
+      &_autor {
+        margin-left: 37.2px;
+        margin-bottom: 26.45px;
+        font-family: 'SF Compact Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        color: $secondColor;
+      }
+    }
+  }
+
+  &_btn {
+    margin-left: 150px;
+    padding: 23px 42px;
+    background: $text;
+    border-radius: 10px;
+    font-family: 'SF Compact Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: black;
+  }
+
+  &_btn:hover {
+    background-color: #13B15C;
+    color: $text;
+    transition: background-color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+  }
+  &_btn:active {
+    background-color: #24C76F;
+  }
+}
+
+.jobs {
+  position: absolute;
+  left: 46.82px;
+  bottom: 0px;
+}
+.jobs850 {
+  display: none;
+}
+
+.content_right {
+  flex: 1 1 40%;
+}
+
+.table {
+  margin-top: 83.28px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+
+  &_list {
+    margin-bottom: 10px;
+    padding-left: 37.98px;
+    text-align: end;
+    border: 1px solid #303948;
+    background: #303948;
+    border-radius: 15px;
+
+    &_icon {
+      margin-right: 37.8px;
+      margin-top: 29px;
+    }
+
+    &_description {
+      margin-bottom: 6px;
+      max-width: 194.96px;
+      text-align: left;
+      font-family: 'SF Compact Display';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 110%;
+      color: $text;
+
+      &_span {
+        margin-top: 0;
+        max-width: 216px;
+        text-align: left;
+        font-family: 'SF Compact Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 170%;
+        color: $subText;
+      }
+    }
+  }
+
+  &_list:nth-child(4n + 3) {
+    @include SecondCarts;
+  }
+  &_list:nth-child(4n + 4) {
+    @include SecondCarts;
+  }
+}
+
+@import '850.scss';
+@import '376.scss';
